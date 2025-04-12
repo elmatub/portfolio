@@ -26,3 +26,23 @@ testimonials.forEach(t => {
   div.innerHTML = `<strong>${t.name}</strong><p>${t.feedback}</p>`;
   testimonialContainer.appendChild(div);
 });
+// Tapeur de texte
+const typewriter = document.getElementById("typewriter");
+const text = "Bienvenue sur le portfolio de ELMA";
+let index = 0;
+
+function typeText() {
+  if (index < text.length) {
+    typewriter.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeText, 100);
+  }
+}
+typeText();
+
+// Scroll vers le contenu
+function scrollToMain() {
+  document.getElementById("main-content").scrollIntoView({
+    behavior: "smooth"
+  });
+}
