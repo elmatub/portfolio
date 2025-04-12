@@ -46,3 +46,19 @@ function scrollToMain() {
     behavior: "smooth"
   });
 }
+
+// Toggle mode clair/sombre (exemple basique)
+document.getElementById('toggle-mode')?.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+});
+
+// Formulaire de contact
+document.getElementById('contact-form')?.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const name = this.name.value;
+  const email = this.email.value;
+  const message = this.message.value;
+
+  alert(`Merci ${name}, votre message a été envoyé !`);
+  this.reset();
+});
