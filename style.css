@@ -98,3 +98,44 @@ body.light footer {
 .intro-content button:hover {
   background-color: #00b3db;
 }
+#admin-panel {
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+#admin-panel h2, #admin-panel h3 {
+  color: #38bdf8;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #334155;
+  color: #f1f5f9;
+}
+
+#contact-form button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #0ea5e9;
+}
