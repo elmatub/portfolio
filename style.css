@@ -139,3 +139,60 @@ body.light footer {
 #contact-form button:hover {
   background-color: #0ea5e9;
 }
+/* 📱 Petits écrans : smartphone */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .contact-info {
+    margin-top: 1rem;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+
+/* 💻 Tablettes et petits laptops */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .profile-photo img {
+    width: 160px;
+    height: 160px;
+  }
+}
