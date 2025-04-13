@@ -28,7 +28,7 @@ testimonials.forEach(t => {
 });
 // Tapeur de texte
 const typewriter = document.getElementById("typewriter");
-const text = "Bienvenue sur le portfolio de ELMA";
+const text = "Bienvenue sur le portfolio de El Hadji Mamadou Ndiaye";
 let index = 0;
 
 function typeText() {
