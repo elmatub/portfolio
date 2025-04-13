@@ -104,5 +104,25 @@
     </div>
   </section>
 </section>
+
+  <form id="articleForm">
+  <input type="text" id="titre" placeholder="Titre" required />
+  <textarea id="contenu" placeholder="Contenu" required></textarea>
+  <button type="submit">Ajouter l'article</button>
+</form>
+
+<script type="module">
+  import { addArticle } from './js/api.js';
+
+  document.getElementById('articleForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const titre = document.getElementById('titre').value;
+    const contenu = document.getElementById('contenu').value;
+    const date = new Date().toISOString();
+
+    await addArticle({ titre, contenu, date });
+    alert("✅ Article ajouté avec succès !");
+  });
+</script>
 </body>
 </html>
